@@ -19,6 +19,6 @@ elixir(mix => {
     mix.sass('app.scss')
        .webpack('app.js')
        .browserSync({
-        proxy: 'http://localhost:3000/TemplateElixirAssets/public'
+        proxy: 'http://localhost:3000//public'
      });
 });
