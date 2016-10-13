@@ -17,8 +17,9 @@ elixir.config.publicPath = 'www';
 
 elixir(mix => {
     mix.sass('app.scss')
-       .webpack('app.js')
-       .browserSync({
-        proxy: 'http://localhost:3000//public'
-     });
+    .webpack('app.js')
+       .scripts([
+           'hello.js'
+       ])
+
 });
